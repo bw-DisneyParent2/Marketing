@@ -1,6 +1,4 @@
-# MARKETING SITE
-
-# DISNEY PARENT
+# MARKETING SITE - DISNEY PARENT
 
 # PITCH
 As a parent with small children, wouldn't you like to make your Disney Experience more fun and economical?  Disney Parent puts the tools in your hands to be able to swap childcare and stroller passes with other parents allowing you save money and enjoy the 'big-kid' rides.
