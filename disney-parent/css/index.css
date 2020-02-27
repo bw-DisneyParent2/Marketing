@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 10px;
 }
@@ -5,24 +8,25 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: roboto;
 }
 h1 {
-  font-size: 3.8rem;
+  font-size: 4.4rem;
 }
 h2 {
-  font-size: 2.8rem;
+  font-size: 3.4rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 p,
 li,
 a {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 #navBar {
   width: 100%;
-  height: 8rem;
+  height: 9rem;
   position: relative;
   margin: 0;
   padding: 0;
@@ -44,21 +48,146 @@ a {
   align-items: center;
 }
 #navBar .nav-container .nav-items img {
-  width: 22%;
-  height: 22%;
+  width: 19%;
+  height: 19%;
 }
 #navBar .nav-container .nav-items img,
 #navBar .nav-container .nav-items a {
   margin-right: 3rem;
+}
+#navBar .nav-container .nav-items a {
+  color: #1642BF;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2em;
+}
+#navBar .nav-container .nav-items a:hover {
+  color: #fff;
+}
+#navBar .nav-container .signUp {
+  display: block;
+  background: #1642BF;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
 }
 @media only screen and (max-width: 1030px) {
   #navBar .nav-container {
     width: 100%;
   }
 }
+footer {
+  width: 100%;
+  background: #99b4ff;
+  position: absolute;
+}
+footer p {
+  display: block;
+  color: #1642BF;
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 1030px;
+}
 #container {
   width: 1030px;
   height: 100%;
   position: relative;
   margin: 0 auto;
+}
+#hero-header {
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10rem;
+}
+#hero-header div {
+  width: 45rem;
+  height: 100%;
+}
+#hero-header .welcome-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+#hero-header .welcome-text .signUp {
+  display: block;
+  background: #99b4ff;
+  color: #1642BF;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: bold;
+}
+#hero-header .welcome-text .signUp:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#hero-header .img-container img {
+  width: 100%;
+  height: 95%;
+}
+#hero-header .img-container .attribution {
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+.content {
+  width: 100%;
+  margin-bottom: 10rem;
+}
+.content .img-container {
+  width: 100%;
+}
+.content .img-container img {
+  width: 100%;
+  height: 25rem;
+}
+.content .img-container .attribution {
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+.content .text-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.content .text-container article {
+  padding: 2rem;
+}
+.content .text-container article:first-child {
+  padding-left: 0;
+}
+.content .text-container article:last-child {
+  padding-right: 0;
+}
+.largeSignUp {
+  display: block;
+  background: none;
+  color: #000;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-size: 4.5rem;
+  font-weight: bold;
+  width: 30rem;
+  padding: 0;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #99b4ff;
+  margin-bottom: 12rem;
+}
+.largeSignUp:hover {
+  color: #00000054;
+  border-color: #00000054;
+  transition: 0.3s;
+}
+.disclaimer {
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
 }
