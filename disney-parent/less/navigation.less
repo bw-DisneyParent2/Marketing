@@ -15,9 +15,16 @@
         .nav-items {
             .flex(row, flex-start, center);
 
-            img {
-                width: 15%;
-                height: 15%;
+            .logo-link {
+                display: block;
+                width: 7rem;
+                height: 7rem;
+                background: url("../images/logo-with-name.png") no-repeat center top;
+                background-size: 84%;
+                /* img {
+                    width: 25%; 
+                } */
+                
             }
 
             img, a {
@@ -29,10 +36,6 @@
                 text-decoration: none;
                 font-weight: 600;
                 font-size: 1.8em;
-
-                &:hover {
-                    color: @white;
-                }
             }
         }
 

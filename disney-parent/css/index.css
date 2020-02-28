@@ -86,6 +86,13 @@ a {
   font-size: 1.6rem;
   line-height: 1.8;
 }
+a {
+  color: #000;
+}
+a:hover {
+  color: #00000056;
+  transition: 0.2s;
+}
 #navBar {
   width: 100%;
   height: 7rem;
@@ -109,9 +116,15 @@ a {
   justify-content: flex-start;
   align-items: center;
 }
-#navBar .nav-container .nav-items img {
-  width: 15%;
-  height: 15%;
+#navBar .nav-container .nav-items .logo-link {
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  background: url("../images/logo-with-name.png") no-repeat center top;
+  background-size: 84%;
+  /* img {
+                    width: 25%; 
+                } */
 }
 #navBar .nav-container .nav-items img,
 #navBar .nav-container .nav-items a {
@@ -122,9 +135,6 @@ a {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.8em;
-}
-#navBar .nav-container .nav-items a:hover {
-  color: #fff;
 }
 #navBar .nav-container .signUp {
   display: block;
@@ -170,17 +180,17 @@ footer p {
   width: 45rem;
   height: 100%;
 }
-#hero-header .welcome-text {
+#hero-header .hero-text {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: flex-start;
 }
-#hero-header .welcome-text p {
+#hero-header .hero-text p {
   margin-top: -2rem;
   margin-bottom: 4rem;
 }
-#hero-header .welcome-text .signUp {
+#hero-header .hero-text .signUp {
   display: block;
   background: #99b4ff;
   color: #1642BF;
@@ -190,7 +200,7 @@ footer p {
   padding-right: 2rem;
   font-weight: bold;
 }
-#hero-header .welcome-text .signUp:hover {
+#hero-header .hero-text .signUp:hover {
   opacity: 0.5;
   transition: 0.3s;
 }
@@ -226,6 +236,7 @@ footer p {
   align-items: flex-start;
 }
 .content .text-container article {
+  width: 100%;
   padding: 2rem;
 }
 .content .text-container article .article-icon {
