@@ -72,6 +72,7 @@ body {
 }
 h1 {
   font-size: 4.4rem;
+  line-height: 1.6;
 }
 h2 {
   font-size: 3.4rem;
@@ -83,10 +84,11 @@ p,
 li,
 a {
   font-size: 1.6rem;
+  line-height: 1.8;
 }
 #navBar {
   width: 100%;
-  height: 9rem;
+  height: 7rem;
   position: relative;
   margin: 0;
   padding: 0;
@@ -108,8 +110,8 @@ a {
   align-items: center;
 }
 #navBar .nav-container .nav-items img {
-  width: 19%;
-  height: 19%;
+  width: 15%;
+  height: 15%;
 }
 #navBar .nav-container .nav-items img,
 #navBar .nav-container .nav-items a {
@@ -119,7 +121,7 @@ a {
   color: #1642BF;
   text-decoration: none;
   font-weight: 600;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 #navBar .nav-container .nav-items a:hover {
   color: #fff;
@@ -174,6 +176,10 @@ footer p {
   justify-content: center;
   align-items: flex-start;
 }
+#hero-header .welcome-text p {
+  margin-top: -2rem;
+  margin-bottom: 4rem;
+}
 #hero-header .welcome-text .signUp {
   display: block;
   background: #99b4ff;
@@ -221,6 +227,9 @@ footer p {
 }
 .content .text-container article {
   padding: 2rem;
+}
+.content .text-container article .article-icon {
+  width: 15%;
 }
 .content .text-container article:first-child {
   padding-left: 0;
