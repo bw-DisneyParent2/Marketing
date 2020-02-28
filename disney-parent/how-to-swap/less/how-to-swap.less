@@ -1,0 +1,39 @@
+@import "../less/variables";
+@import "../less/mixins";
+
+#app-info {
+    .text-container {
+        .flex(column);
+
+        article {
+            .flex(row);
+            padding: 0;
+            margin-bottom: 6rem;
+        
+            img {
+                margin-right: 12rem;
+            }
+
+            
+        }
+    }
+}
+
+#safety-info {
+    .flex(row, space-between);
+
+    .text-container {
+        width: 38%;
+        height: 35rem;
+    }
+
+    .img-container {
+        width: 55%;
+        height: 35rem;
+
+        img {
+            height: 90%;
+        }
+        
+    }
+}

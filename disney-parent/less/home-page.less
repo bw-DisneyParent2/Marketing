@@ -1,0 +1,121 @@
+#container {
+    width: 1030px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#hero-header {
+    width: 100%;
+    height: 60rem;
+    .flex(row, space-between);
+    margin-bottom: 10rem;
+
+    div {
+        width: 45rem;
+        height: 100%;
+    }
+
+    .hero-text {
+        .flex(column, center);
+
+        p {
+            margin-top: -2rem;
+            margin-bottom: 4rem;
+        }
+        .signUp {
+            .signUpBtn(@main-bg, @disney-blue);
+            padding-left: 2rem;
+            padding-right: 2rem;
+            font-weight: bold;
+            
+
+            &:hover {
+                opacity: 0.5;
+                transition: .3s;
+            }
+        }
+    }
+
+    .img-container {
+        
+
+        img {
+            width: 100%;
+            height: 95%;
+        }
+
+        .attribution {
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 10rem;
+
+    .img-container {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 25rem;
+        }
+
+        .attribution {
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .text-container {
+        .flex(row, space-between);
+
+        article {
+            width: 100%;
+            padding: 2rem;
+
+            .article-icon {
+                width: 15%;
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }        
+    }
+    
+}
+
+
+.largeSignUp {
+    .signUpBtn(none, @black);
+    font-size: 4.5rem;
+    font-weight: bold;
+    width: 42rem;
+    padding: 0;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid @disney-light;
+    margin-bottom: 12rem;
+
+    &:hover {
+        color: #00000054;
+        border-color: #00000054;
+        transition: .3s;
+    }
+}
+
+.disclaimer {
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}

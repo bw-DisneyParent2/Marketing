@@ -1,0 +1,14 @@
+.flex(@direction: row, @justifyContent: flex-start, @alignItems: flex-start, @wrap: nowrap) {
+    display: flex;
+    flex-flow: @direction @wrap;
+    justify-content: @justifyContent;
+    align-items: @alignItems;
+}
+
+.signUpBtn(@bg: @disney-blue, @btnColor: @white) {
+    display: block;
+    background: @bg;
+    color: @btnColor;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+}
