@@ -8,7 +8,13 @@ footer {
         color: @disney-blue;
         position: relative;
         margin: 0 auto;
-        padding: 2rem 0;
-        width: 1030px;
+        padding: 2rem;
+        width: 100%; // full 1030px
+    }
+
+    @media @desktop1000 {
+        p {
+            width: 1000px;
+        }
     }
 }
