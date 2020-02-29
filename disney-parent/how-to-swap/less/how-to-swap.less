@@ -4,31 +4,50 @@
 #app-info {
     .text-container {
         .flex(column);
+        margin-bottom: 0;
 
         article {
-            .flex(row);
+            .flex(column);
             padding: 0;
-            margin-bottom: 6rem;
+            margin-bottom: 3rem;
         
             img {
-                margin-right: 12rem;
+                width: 100%;
+                //margin-right: 12rem;
             }
 
             
         }
     }
+
+    @media @tablet700 {
+        .text-container {
+            width: 100%;
+            margin: 2rem 0;
+            article {
+                .flex(row);
+                width: 100%;
+
+                img {
+                    width: auto;
+                    margin-right: 12rem;
+                }
+            }
+        }
+    }
 }
 
 #safety-info {
-    .flex(row, space-between);
+    .flex(column);
 
     .text-container {
-        width: 38%;
-        height: 35rem;
+        width: 100%; // 38%
+        height: 22rem; //35rem
+        margin-bottom: 0rem;
     }
 
     .img-container {
-        width: 55%;
+        width: 100%; //55%
         height: 35rem;
 
         img {
@@ -36,4 +55,31 @@
         }
         
     }
+
+    @media @tablet700 {
+        .flex(row, space-between, center);
+        .text-container {
+            width: 38%;
+            height: 35rem;
+            margin-top: 0;
+
+            article {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .img-container {
+            width: 55%;
+            height: 35rem;
+
+            img {
+                height: 90%;
+            }
+        }
+    }
+    
 }
+
