@@ -1,17 +1,26 @@
+// Variables for selecting elements
 let signUpBtn = document.querySelectorAll(".signUp");
 let navLinks = document.querySelectorAll(".nav-container .nav-items a, .nav-container .signUp");
-let navItems = document.querySelector(".nav-items");
-
+let navItems = document.querySelector("#navBar .nav-container .nav-items");
 let menuIcon = document.createElement("div");
+
+// Creating Burger Menu Icon for mobile view
 menuIcon.innerHTML = "<div></div><div></div><div></div>";
 menuIcon.className = "menuIcon";
 menuIcon.style = "width: 8rem; height: 8rem; margin-top: 2rem; background: #1642BF40; cursor: pointer";
 menuIcon.querySelectorAll("div").forEach(innerDiv => innerDiv.style = "width: 90%; height: 1.5rem; background: #1642BF; margin: .9rem auto; border-radius: 5px;");
 
 
+
+/* Body Onload Function
+ * As the body of the page loads, it will perform the following code
+ */
 document.querySelector("body").onload = function(){
+    // Assign the href to all of the sign up button links on the page
     signUpBtn.forEach(button => button.setAttribute("href", "#"));
     
+   
+    // Check the size of the window for mobile view to display the menu icon
     if(window.innerWidth < 500) {
         navItems.prepend(menuIcon);
     }
@@ -38,7 +47,9 @@ document.querySelector("body").onload = function(){
 }
 
 
-
+/* Menu Icon OnClick function
+ * If the menu icon is showing, will show the nav links when clicking on the icon and turn it into an 'x' to hide links when clicked again.
+ */
 menuIcon.onclick = function() {
     let hidden = document.querySelector(".nav-items a:last-child").getAttribute("style") === null || document.querySelector(".nav-items a:last-child").getAttribute("style") === "display: none;";
 
