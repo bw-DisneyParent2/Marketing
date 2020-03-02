@@ -1,0 +1,112 @@
+#hero-header {
+  background-color: #2F5560;
+  width: 100%;
+  height: 30rem;
+}
+#hero-header .img-container {
+  width: 100%;
+  height: 100%;
+  background: url("../images/hero-image.jpg") no-repeat center;
+  background-size: 100% 30rem;
+}
+#hero-header .img-container h1 {
+  width: 19rem;
+  position: relative;
+  margin-top: 24.8rem;
+  color: #fff;
+}
+@media only screen and (min-width: 700px) {
+  #hero-header .img-container h1 {
+    margin-top: 20.8rem;
+  }
+}
+@media only screen and (min-width: 500px) {
+  #hero-header .img-container h1 {
+    margin-top: 23.8rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #hero-header .img-container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+#app-info .text-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+#app-info .text-container article {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+#app-info .text-container article img {
+  width: 265px;
+  height: 150.16px;
+}
+@media only screen and (min-width: 700px) {
+  #app-info .text-container {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  #app-info .text-container article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+  #app-info .text-container article img {
+    margin-right: 5rem;
+  }
+  #app-info .text-container article:nth-child(even) {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #app-info .text-container article:nth-child(even) div {
+    margin-right: 5rem;
+  }
+}
+#safety-info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5rem;
+}
+#safety-info .text-container {
+  width: 100%;
+  height: 22rem;
+}
+#safety-info .text-container article {
+  margin: 0;
+  padding: 0 2rem;
+}
+@media only screen and (min-width: 700px) {
+  #safety-info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #safety-info .text-container {
+    width: 100%;
+  }
+  #safety-info .text-container article {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
