@@ -23,6 +23,7 @@ time, mark, audio, video {
 	//vertical-align: baseline;
 } */
 /* HTML5 display-role reset for older browsers */
+@import url("fontawesome-all.min.css");
 article,
 aside,
 details,
@@ -92,6 +93,10 @@ a {
 a:hover {
   color: #00000056;
   transition: 0.2s;
+}
+a.fab {
+  text-decoration: none;
+  font-size: 2.4rem;
 }
 #navBar {
   width: 100%;
