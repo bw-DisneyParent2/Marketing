@@ -1,0 +1,116 @@
+#hero-header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 10rem;
+}
+#hero-header div {
+  width: 100%;
+  padding: 0 2rem;
+}
+#hero-header .hero-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+#hero-header .hero-text p {
+  margin-top: -2rem;
+  margin-bottom: 4rem;
+}
+#hero-header .hero-text .signUp {
+  display: block;
+  background: #99b4ff;
+  color: #1642BF;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: bold;
+}
+#hero-header .hero-text .signUp:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#hero-header .img-container img {
+  width: 100%;
+  height: 40rem;
+}
+@media only screen and (max-width: 350px) {
+  #hero-header .img-container img {
+    height: 17rem;
+  }
+}
+#app-info .text-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+#app-info .text-container article {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+}
+#app-info .text-container article img {
+  width: 265px;
+  height: 150.16px;
+}
+@media only screen and (min-width: 700px) {
+  #app-info .text-container {
+    width: 100%;
+    margin: 0 0;
+  }
+  #app-info .text-container article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  #app-info .text-container article img {
+    margin-right: 5rem;
+  }
+  #app-info .text-container article:nth-child(even) {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #app-info .text-container article:nth-child(even) div {
+    margin-right: 5rem;
+  }
+}
+#safety-info {
+  margin-bottom: 15rem;
+}
+.content {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 700px) {
+  #hero-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 60rem;
+  }
+  #hero-header div {
+    height: 100%;
+  }
+  #hero-header .hero-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #hero-header .img-container img {
+    height: 95%;
+  }
+}

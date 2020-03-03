@@ -1,0 +1,134 @@
+@import "../less/variables";
+@import "../less/mixins";
+
+#hero-header {
+    width: 100%;
+    height: auto; // 60rem
+    .flex(column-reverse);
+    margin-bottom: 10rem;
+    
+
+    div {
+        width: 100%; //45rem
+        //height: 60rem; // full 60rem
+        padding: 0 2rem;
+    }
+
+    .hero-text {
+        .flex(column, center);
+
+        p {
+            margin-top: -2rem;
+            margin-bottom: 4rem;
+        }
+        .signUp {
+            .signUpBtn(@main-bg, @disney-blue);
+            padding-left: 2rem;
+            padding-right: 2rem;
+            font-weight: bold;
+            
+
+            &:hover {
+                opacity: 0.5;
+                transition: .3s;
+            }
+        }
+    }
+
+    .img-container {
+
+        img {
+            width: 100%;
+            height: 40rem; // 60rem
+        }
+
+        
+    }
+
+    @media @mobile350 {
+        .img-container {
+            img {
+                height: 17rem;
+            }
+        }
+    }
+
+    
+}
+
+#app-info {
+    .text-container {
+        .flex(column);
+        margin-bottom: 0;
+
+        article {
+            .flex(column);
+            padding: 0;
+            //margin-bottom: 3rem;
+        
+            img {
+                width: 265px;
+                height: 150.16px;
+                //margin-right: 12rem;
+            }
+
+            
+        }
+    }
+
+    @media @tablet700 {
+        .text-container {
+            width: 100%;
+            margin: 0 0;
+            article {
+                .flex(row);
+                width: 100%;
+                //margin-bottom: 10rem;
+
+                img {
+                    
+                    margin-right: 5rem;
+                }
+                
+                &:nth-child(even) {
+                    .flex(row-reverse);
+                    
+                    div {
+                        margin-right: 5rem;
+                    }
+                }
+                
+            }
+
+            
+        }
+    }
+}
+
+#safety-info {
+    margin-bottom: 15rem;
+}
+.content {
+    margin-bottom: 0;
+}
+
+@media @tablet700 {
+    #hero-header {
+        .flex(row, space-between, flex-start);
+        height: 60rem;
+
+        div {
+            height: 100%;
+        }
+
+        .hero-text {
+            .flex(column, center, flex-start);
+        }
+
+        .img-container {
+            img {
+                height: 95%;
+            }
+        }
+    }
+}
