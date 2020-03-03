@@ -379,13 +379,14 @@ footer p {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 5rem;
   }
   .content .text-container article {
     width: 32%;
-    height: 15rem;
+    height: auto;
     margin-bottom: 0;
+    margin-bottom: 5rem;
   }
   .content .text-container article h3 {
     font-size: 2vw;
