@@ -17,7 +17,7 @@ menuIcon.querySelectorAll("div").forEach(innerDiv => innerDiv.style = "width: 90
  */
 document.querySelector("body").onload = function(){
     // Assign the href to all of the sign up button links on the page
-    signUpBtn.forEach(button => button.setAttribute("href", "#"));
+    signUpBtn.forEach(button => button.setAttribute("href", "https://bw-disney-parent-ftro6xayi.now.sh/"));
     
    
     // Check the size of the window for mobile view to display the menu icon
